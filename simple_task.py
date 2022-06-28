@@ -14,7 +14,7 @@ def process(p1):
     print(p1)
     return 'Simple task done'
 
-with DAG(dag_id='Simple_task', schedule_interval='*/45 * * * *', default_args=default_args, catchup=False) as dag:
+with DAG(dag_id='Simple_task', schedule_interval='* */2 * * *', default_args=default_args, catchup=False) as dag:
     task_4 = PythonOperator(task_id='Validate_ingestion', python_callable=process, op_args=['my super parameter'])
 
 
