@@ -22,7 +22,7 @@ dag = DAG(
     'simple_DAG_with_params',
     default_args=default_args,
     description='A simple DAG',
-    schedule_interval='* */3 * * *'),
+    schedule_interval='* */3 * * *',
     user_defined_macros=default_args ,
 )
 
