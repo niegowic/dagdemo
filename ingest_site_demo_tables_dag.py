@@ -6,7 +6,7 @@ from datetime import datetime
 
 default_args = {
     'start_date': datetime(2020, 1, 1),
-    'owner': 'Airflow',
+    'owner': 'Airflow2',
     'email': 'owner@test.com'
 }
 
